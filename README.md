@@ -30,7 +30,7 @@ With caching on, a successful response is saved in the plugin's data file. Openi
 
 ### Clear input and request errors
 
-An issue URL, pull request URL or another host gives an error before a request. A valid discussion URL accepts a query string, trailing slash or comment anchor. Missing tokens, HTTP failures and missing discussion data have messages in the card. GitHub error text is not copied into these messages.
+An issue URL, pull request URL or another host gives an error before a request. A valid discussion URL accepts a query string, trailing slash or comment anchor. Missing tokens, HTTP failures and missing discussion data have messages in the card. If caching is on and a saved card exists for that discussion, you see the saved card with Cached instead of the message. GitHub error text is not copied into these messages.
 
 <img src="https://raw.githubusercontent.com/theluckystrike/discussion-brief-cards/HEAD/docs/error.png" alt="A note with an invalid URL and a local error message" width="720">
 
@@ -90,7 +90,7 @@ After a successful check, Pro can work offline for up to 14 days. Sign out or a 
 
 ### Why does GitHub need a token for a public source?
 
-GitHub GraphQL requires authentication. Public content does not remove that requirement. A missing read token gives a local message. A rejected token gives a request error. Check its permissions, update its secret value and select Refresh.
+GitHub GraphQL requires authentication. Public content does not remove that requirement. A missing read token gives a local message. A rejected token gives a request error. When a saved card exists, the card shows that saved card with Cached and its old fetch time instead. If the fetch time does not change after Refresh, check the token permissions, update its secret value and select Refresh.
 
 ### Does sign-out remove my discussion read token?
 

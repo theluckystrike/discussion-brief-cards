@@ -32,7 +32,9 @@ export function cutText(text: string | null | undefined, max: number): string | 
 	const t = text.trim();
 	if (!t) return null;
 	if (t.length <= max) return t;
-	return `${t.slice(0, max)}...`;
+	// Drop a high surrogate at the cut, so an emoji is not split into a broken glyph.
+	const end = /[\uD800-\uDBFF]/.test(t.charAt(max - 1)) ? max - 1 : max;
+	return `${t.slice(0, end)}...`;
 }
 
 /** One safe host for the source link and the full text link. */
