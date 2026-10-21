@@ -62,6 +62,8 @@ For a Pro list, change the block language to `discussion-list` and put one URL o
 
 ## Settings
 
+After a minor or major update, this plugin opens one What's new tab in the background. The tab and settings card suggest other NoteMods plugins and Zovo Chat and link to notemods.com for feedback ([privacy](https://notemods.com/privacy/)). The tab sends no data. Turn the tab off in Settings.
+
 Discussion read token selects the secret for card reads. The saved settings hold its reference. The value is managed through Obsidian secret storage. Keep this secret separate from the Sponsors sign-in secret.
 
 Use the cached card is on by default. Turning it off stops cache reads and new cache writes. It leaves previous saved entries in the data file. Treat that file as local discussion content: a vault sync or backup tool can copy it.

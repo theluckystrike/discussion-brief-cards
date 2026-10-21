@@ -7,6 +7,8 @@ import { cacheKey, parseDiscussionUrl } from './parse';
 import { SPONSORS, bindPro, isPro, onProChange, resetPro } from './pro';
 import { renderCard, renderError } from './render';
 import { DEFAULT_SETTINGS, DiscussionBriefCardsSettingTab, normalizeSettings, type DiscussionBriefCardsSettings } from './settings';
+import { setupHello } from './hello/index';
+import WHATS_NEW from './whats-new.json';
 
 export const BLOCK_LANG = 'discussion';
 export const LIST_LANG = 'discussion-list';
@@ -23,6 +25,8 @@ export default class DiscussionBriefCardsPlugin extends Plugin {
 	private saveQueue: Promise<void> = Promise.resolve();
 
 	async onload(): Promise<void> {
+		// First: "What's new" reads its state before the settings load (packages/hello). It does not wait.
+		setupHello(this, WHATS_NEW);
 		await this.loadSettings();
 		const pro = createGitHubSponsors(this.app, this.manifest.id, SPONSORS, this);
 		pro.init();
