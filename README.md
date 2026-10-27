@@ -36,7 +36,7 @@ An issue URL, pull request URL or another host gives an error before a request. 
 
 ### Compact discussion list (Pro)
 
-Use `discussion-list` to put several discussion URLs in one compact list. Each row has a source link, answer state and comment count. Select Answered or Not answered to narrow the rows. Request errors remain visible in the filtered list. Refresh requests new data and keeps the selected filter. You can refresh the list again after the first refresh.
+Use `discussion-list` to put several discussion URLs in one compact list. Each row has a source link, answer state and comment count. Select Answered or Not answered to narrow the rows. Request errors remain visible in the filtered list. Refresh requests new data and keeps the selected filter.
 
 <img src="https://raw.githubusercontent.com/theluckystrike/discussion-brief-cards/HEAD/docs/list.png" alt="Three sample discussions in a Pro list with answer state filters" width="720">
 
@@ -58,7 +58,7 @@ https://github.com/owner/repository/discussions/42
 
 Replace the sample URL with the source you want to follow. Keep your own decisions, questions and task notes outside the block. The plugin fetches data when the rendered card needs it. It does not poll a closed note. Select Refresh when you need a new response.
 
-For a Pro list, change the block language to `discussion-list` and put one URL on each line. Empty lines and lines that start with `#` are skipped. A list shows a Pro message before loading its URLs when Pro is off. Signing out replaces an open list with that message.
+For a Pro list, change the block language to `discussion-list` and put one URL on each line. Empty lines and lines that start with `#` are skipped. A list shows a Pro message before loading its URLs when Pro is off. Its Refresh button then shows a Sponsor on GitHub notice. Signing out replaces an open list with that message.
 
 ## Settings
 

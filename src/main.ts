@@ -4,7 +4,7 @@ import { createGitHubSponsors } from './license/github-obsidian';
 import { fetchCard, type CardData, type FetchEnv } from './card';
 import { renderList, type ListItem, type ListFilter } from './list';
 import { cacheKey, parseDiscussionUrl } from './parse';
-import { SPONSORS, bindPro, isPro, onProChange, resetPro } from './pro';
+import { PRO_LIST, SPONSORS, bindPro, isPro, onProChange, proNotice, proText, resetPro } from './pro';
 import { renderCard, renderError } from './render';
 import { DEFAULT_SETTINGS, DiscussionBriefCardsSettingTab, normalizeSettings, type DiscussionBriefCardsSettings } from './settings';
 import { setupHello } from './hello/index';
@@ -134,7 +134,8 @@ export default class DiscussionBriefCardsPlugin extends Plugin {
 		const draw = (): void => {
 			if (!active) return;
 			if (!isPro()) {
-				renderError(el, 'The discussion-list block needs Pro. Open the plugin settings for GitHub Sponsors sign-in.', () => undefined);
+				// The button of the card shows the Pro notice with the Sponsor on GitHub button. No discussion is read.
+				renderError(el, proText(PRO_LIST), () => proNotice(PRO_LIST));
 				return;
 			}
 			renderList(el, items, filter, (next) => { filter = next; draw(); }, () => void load(true));

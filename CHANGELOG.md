@@ -1,5 +1,11 @@
 # discussion-brief-cards
 
+## 1.1.1
+
+### Patch Changes
+
+- f643ed3: Without Pro, the Refresh button of a discussion-list block now shows how to get Pro, with a Sponsor on GitHub button. Before, it did nothing. No discussion is read until Pro is on.
+
 ## 1.1.0
 
 ### Minor Changes
