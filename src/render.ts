@@ -35,10 +35,10 @@ export function renderCard(container: HTMLElement, card: CardData, onRefresh: ()
 	}
 }
 
-/** Draws one error card. The token never appears here. */
-export function renderError(container: HTMLElement, message: string, onRefresh: () => void): void {
+/** Draws one error card. The token never appears here. The label is the text of the button (default Refresh). */
+export function renderError(container: HTMLElement, message: string, onRefresh: () => void, label = 'Refresh'): void {
 	container.empty();
 	const root = container.createDiv({ cls: 'dbc-card dbc-error' });
 	root.createDiv({ cls: 'dbc-error-text', text: message });
-	root.createEl('button', { cls: 'dbc-refresh', text: 'Refresh' }).addEventListener('click', onRefresh);
+	root.createEl('button', { cls: 'dbc-refresh', text: label }).addEventListener('click', onRefresh);
 }

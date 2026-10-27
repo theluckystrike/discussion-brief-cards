@@ -1,6 +1,6 @@
 {
 	"name": "discussion-brief-cards",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"private": true,
 	"description": "Show GitHub discussion text and answer state beside your notes.",
 	"main": "main.js",

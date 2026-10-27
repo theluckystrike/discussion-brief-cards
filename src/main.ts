@@ -134,8 +134,8 @@ export default class DiscussionBriefCardsPlugin extends Plugin {
 		const draw = (): void => {
 			if (!active) return;
 			if (!isPro()) {
-				// The button of the card shows the Pro notice with the Sponsor on GitHub button. No discussion is read.
-				renderError(el, proText(PRO_LIST), () => proNotice(PRO_LIST));
+				// The "Get Pro" button of the card shows the Pro notice with the Sponsor on GitHub button. No discussion is read.
+				renderError(el, proText(PRO_LIST), () => proNotice(PRO_LIST), 'Get Pro');
 				return;
 			}
 			renderList(el, items, filter, (next) => { filter = next; draw(); }, () => void load(true));

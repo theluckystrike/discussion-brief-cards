@@ -58,7 +58,7 @@ https://github.com/owner/repository/discussions/42
 
 Replace the sample URL with the source you want to follow. Keep your own decisions, questions and task notes outside the block. The plugin fetches data when the rendered card needs it. It does not poll a closed note. Select Refresh when you need a new response.
 
-For a Pro list, change the block language to `discussion-list` and put one URL on each line. Empty lines and lines that start with `#` are skipped. A list shows a Pro message before loading its URLs when Pro is off. Its Refresh button then shows a Sponsor on GitHub notice. Signing out replaces an open list with that message.
+For a Pro list, change the block language to `discussion-list` and put one URL on each line. Empty lines and lines that start with `#` are skipped. A list shows a Pro message before loading its URLs when Pro is off. Its Get Pro button then shows a notice with a Sponsor on GitHub button. Signing out replaces an open list with that message.
 
 ## Settings
 

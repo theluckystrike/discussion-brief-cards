@@ -51,6 +51,8 @@ describe('discussion-list block for a free user', () => {
 		expect(el.textContent).toContain(LEAD);
 		const button = el.querySelector<HTMLButtonElement>('.dbc-refresh')!;
 		expect(button).not.toBeNull();
+		// The button label says what the button does: it shows how to get Pro. It does not refresh.
+		expect(button.textContent).toBe('Get Pro');
 		button.click();
 		await new Promise((r) => setTimeout(r, 0));
 		expect(shown).toEqual([{ text: `${LEAD} ${PITCH}Sponsor on GitHub`, buttons: 1 }]);

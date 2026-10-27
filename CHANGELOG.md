@@ -1,5 +1,11 @@
 # discussion-brief-cards
 
+## 1.1.2
+
+### Patch Changes
+
+- e6da0b8: Without Pro, the button of a discussion-list card now has the label Get Pro. It shows how to get Pro.
+
 ## 1.1.1
 
 ### Patch Changes
