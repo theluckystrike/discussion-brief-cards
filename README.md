@@ -78,7 +78,7 @@ The Sponsors controls show sign-in, status, Refresh and sign-out. The list featu
 
 The core features are free. Pro features need a GitHub Sponsors sponsorship of theluckystrike: $5 a month or more, or $15 once. A total payment of $15 meets the payment requirement for Pro without further payment. Sign-in and the checks below still apply. Your notes stay readable and editable with or without Pro.
 
-GitHub handles the payment. Sponsor at https://github.com/sponsors/theluckystrike. Loading GitHub data needs a GitHub account and a read token. Pro also needs the GitHub account that sponsors.
+GitHub handles the payment. Sponsor at https://github.com/sponsors/theluckystrike?frequency=one-time&metadata_source=discussion-brief-cards. Loading GitHub data needs a GitHub account and a read token. Pro also needs the GitHub account that sponsors.
 
 Discussion reads send the repository owner, repository name, discussion number and your discussion read token to https://api.github.com/graphql when a card needs a fetch or you select Refresh. These three fields come from the URL in your note. Other note text and file paths are not sent. The read token is stored through the secret storage API of Obsidian, separate from the Sponsors token. Cached discussion text is stored in the plugin data.json when caching is on. The discussion reader can send requests before Sponsors sign-in. The sign-in and sponsorship checks described below are separate requests.
 
