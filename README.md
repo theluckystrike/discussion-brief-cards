@@ -56,7 +56,7 @@ https://github.com/owner/repository/discussions/42
 ```
 ````
 
-Replace the sample URL with the source you want to follow. Keep your own decisions, questions and task notes outside the block. The plugin fetches data when the rendered card needs it. It does not poll a closed note. Select Refresh when you need a new response.
+Replace the sample URL with the source you want to follow. Keep your own decisions, questions and task notes outside the block. The plugin fetches data when the rendered card needs it. It does not poll a closed note.
 
 For a Pro list, change the block language to `discussion-list` and put one URL on each line. Empty lines and lines that start with `#` are skipped. A list shows a Pro message before loading its URLs when Pro is off. Its Get Pro button then shows a notice with a Sponsor on GitHub button. Signing out replaces an open list with that message.
 
@@ -77,6 +77,8 @@ The Sponsors controls show sign-in, status, Refresh and sign-out. The list featu
 ## Payment, account and network
 
 The core features are free. Pro features need a GitHub Sponsors sponsorship of theluckystrike: $5 a month or more, or $15 once. A total payment of $15 meets the payment requirement for Pro without further payment. Sign-in and the checks below still apply. Your notes stay readable and editable with or without Pro.
+
+[One payment turns on Pro in every NoteMods plugin](https://notemods.com/pro/).
 
 GitHub handles the payment. Sponsor at https://github.com/sponsors/theluckystrike?frequency=one-time&metadata_source=discussion-brief-cards. Loading GitHub data needs a GitHub account and a read token. Pro also needs the GitHub account that sponsors.
 
