@@ -8,7 +8,7 @@ import manifest from '../manifest.json';
 // A free user sees the discussion-list block card "needs Pro" with a button. Before, the button did nothing. Now it
 // shows the shared Pro notice with the "Sponsor on GitHub" button. No discussion is read. A Pro user gets the list.
 const LEAD = 'The discussion-list block needs Pro.';
-const PITCH = 'Sponsor on GitHub, then sign in from the plugin settings.';
+const PITCH = 'One payment turns on Pro in every NoteMods plugin. Sponsor on GitHub, then sign in from the plugin settings.';
 const SOURCE = 'https://github.com/acme/tools/discussions/42\nhttps://github.com/acme/tools/discussions/7';
 
 function fakePro(pro: boolean): SponsorsManager {

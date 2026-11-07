@@ -1,10 +1,9 @@
 {
 	"id": "discussion-brief-cards",
 	"name": "Discussion Brief Cards",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"changes": [
-		"Without Pro, the button of a discussion-list card now has the label Get Pro.",
-		"It shows how to get Pro."
+		"The Pro notice of Discussion Brief Cards now says that one payment turns on Pro in every NoteMods plugin."
 	],
 	"tip": "Select Refresh on a card to load the current text and answer state after a discussion changes.",
 	"thanks": "Hi, I am Michael, a solo developer in Poland. Discussion Brief Cards is one of over 100 small plugins that I make. Thank you for using it to keep project discussions beside your notes.",
